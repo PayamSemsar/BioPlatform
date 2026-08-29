@@ -1,0 +1,13 @@
+# مسدود کردن اجرای PHP در پوشه uploads
+# این فایل از اجرای اسکریپت‌های PHP آپلود شده جلوگیری می‌کند
+
+# غیرفعال کردن موتور PHP
+php_flag engine off
+
+# deny access to all
+<FilesMatch "\.(php|php5|phtml)$">
+    Deny from all
+</FilesMatch>
+
+# جلوگیری از لیست شدن دایرکتوری
+Options -Indexes

@@ -1,5 +1,52 @@
+```
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+*.o
+*.obj
+*.class
+*.so
+*.dll
+*.exe
+*.out
+
+# Dependencies
+vendor/
 node_modules/
-.next/
+.env
+.env.local
+.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build and distribution
 dist/
 build/
-*.log
+target/
+coverage/
+htmlcov/
+.coverage
+
+# PHP specific
+*.php~
+*.bak
+*.orig
+
+# Cache directories
+.cache/
+.mypy_cache/
+.pytest_cache/
+.gradle/
+```.next/
